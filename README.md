@@ -29,7 +29,7 @@ server_port=9080   # the server port
 int main()
 {
 	AppConfig* config = AppConfig::get_instance();
-        //=为key和value的分隔符，#为注释的符号。可根据配置文件中的注释符号，进行修改。
+    //=为key和value的分隔符，#为注释的符号。可根据配置文件中的注释符号，进行修改。
 	if (config->initialize("config.cfg", "=", "#"))
 	{
 		bool ret = config->is_config_file_exists();
