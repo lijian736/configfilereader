@@ -19,6 +19,7 @@
 server_ip=127.0.0.1    # the server ip
 server_port=9080   # the server port
 ```
+配置文件中，#之后的文本为注释，可自定义注释符号，例如将注释符号修改为@
 
 示例程序：
 ```
@@ -28,6 +29,7 @@ server_port=9080   # the server port
 int main()
 {
 	AppConfig* config = AppConfig::get_instance();
+        //=为key和value的分隔符，#为注释的符号。可根据配置文件中的注释符号，进行修改。
 	if (config->initialize("config.cfg", "=", "#"))
 	{
 		bool ret = config->is_config_file_exists();
