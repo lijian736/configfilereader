@@ -20,7 +20,6 @@ server_ip=127.0.0.1    # the server ip
 server_port=9080   # the server port
 
 示例程序：
-```
 #include "app_config.h"
 #include <iostream>
 
